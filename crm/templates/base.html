@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Band Manager</title>
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link href="https://unpkg.com/tailwindcss@^2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="max-w-7xl mx-auto">
+        {% include 'navbar.html' %}
+        {% block content %}
+        {% endblock content %}
+    </div>
+    {% include "scripts.html" %}
+</body>
+</html>
